@@ -24,6 +24,9 @@
   .section-3 .row h1 {
     padding: 6vmin 4vmin;
   }
+  .section-3 .platform .col-md-6 {
+    /* text-align: center !important; */
+  }
   .section-3 .desktop i {
     font-size: 8vmin;
   }
@@ -42,5 +45,10 @@
 @media only screen and (max-width: 320px) {
   .section-4 .carousel-inner {
     margin-left: -4vmin;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .prev {
+    display: none;
   }
 }

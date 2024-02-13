@@ -20,12 +20,12 @@ header a {
   font-size: 0.9em;
   color: whitesmoke;
 }
--dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .dropdown-content a {
@@ -91,12 +91,16 @@ header .container .col-md-7 p {
   width: 80%;
   border-radius: 0.2em;
 }
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
 .section-1 .row .col-md-6 .panel {
   position: absolute;
   top: 7vmin;
   left: -18vmin;
   background: white;
-  border-radius: white;
+  border-radius: 3px;
   text-align: left;
   padding: 13vmin 5vmin 20vmin 10vmin;
   box-shadow: 0 25px 42px rgba(0, 0, 0, 0.2);
@@ -106,7 +110,7 @@ header .container .col-md-7 p {
 .section-1 .row .col-md-6 .panel h1 {
   font-weight: bold;
   padding: 0.4em 0;
-  font-size: 22em;
+  font-size: 2em;
 }
 .section-1 .row .col-md-6 .panel p {
   font-size: 0.9em;
@@ -203,12 +207,15 @@ header .container .col-md-7 p {
   font-size: 10vmin;
   padding: 1em 0.5em;
 }
+
+/* Section 3 */
 .section-3 {
   height: 70vmin;
   margin-top: 15vmin;
   background: var(--bggradient);
+  overflow: hidden;
 }
-.section-3 .col-d-12 > h1 {
+.section-3 .col-md-12 > h1 {
   padding: 2em 0 0.5em 0;
   color: whitesmoke;
   font-size: 6vmin;
@@ -223,7 +230,7 @@ header .container .col-md-7 p {
   background: white;
   display: inline-block;
   border-radius: 3em;
-  padding: 2vmin 4.5vmin;
+  padding: 2vmin 7.5vmin;
   margin: 1em;
 }
 .section-3 .desktop h3 {
@@ -232,26 +239,33 @@ header .container .col-md-7 p {
 .section-3 .desktop p {
   font-size: 2vmin;
 }
+/*  Section 4 */
 .section-4 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
 }
+
 .section-4 .team {
   padding: 10vmin 4vmin;
 }
+
 .section-4 .card {
   width: 22em;
   margin-top: 10vmin;
 }
+
 .section-4 .card .card-text {
   padding: 0.5em;
 }
+
 .section-4 .card-body > a {
   font-size: 1.5em;
 }
+
 .section-4 .carousel-item {
   padding-left: 3rem;
 }
+
 .border-radius {
   border-radius: 340px;
   width: 60%;
@@ -287,4 +301,18 @@ footer .column i + i {
   background: rgba(0, 0, 0, 0.815);
   z-index: 9999;
   transition: all 1.5s ease;
+}
+.prev {
+  position: absolute;
+  width: 3.5vmin;
+  height: 3.5vmin;
+  top: 50%;
+  transform: translateY(-50%) translateX(20%);
+  border: none;
+  background: transparent;
+  color: #aaa;
+}
+.prev:hover,
+.prev:active {
+  color: #bbb;
 }
